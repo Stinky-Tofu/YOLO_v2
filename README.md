@@ -1,5 +1,8 @@
 YOLO_v2
 =
+![airplane](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(1).jpg) <br>
+![person and bicycle](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(2).jpg) <br>
+![dog](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(4).jpg) <br>
 ## Usage
 1. clone YOLO_v2 repository
 ``` bash
