@@ -1,7 +1,6 @@
 YOLO_v2
 =
-安装
--
+## Usage
 1. clone YOLO_v2 repository
 ``` bash
 git clone https://github.com/Stinky-Tofu/YOLO_v2.git
@@ -10,4 +9,23 @@ git clone https://github.com/Stinky-Tofu/YOLO_v2.git
 在YOLO所在目录新建一个data文件夹，然后在data文件夹下新建一个Pascal_voc文件夹<br>
 下载[Pascal VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)和[Pascal VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar)数据集，然后将这两个数据集放在Pascal_voc文件夹下，并将VOC2012命名为VOCdevkit，将VOC2007命名为VOCdevkit-test <br>
 3. 下载预训练模型<br>
-下载在coco数据上训练过的模型，已将这个coco模型的最后一个卷积层已被
+下载在coco数据上训练过的模型（这个模型首先在COCO数据集上预训练过，然后修改最后一个卷积层，使之适用于Pascal_VOC数据集），然后将这个模型放入YOLO/model/文件夹下。
+4. 训练<br>
+``` bash
+python train.py
+--model_file(model文件夹下模型的名字)
+--gpu(训练时使用的gpu)
+```
+5. 测试<br>
+``` bash
+python test.py
+--model_file(model文件夹下模型的名字)
+--video_path(用于测试的video的路径)
+--image_path(用于测试的image的路径)
+--video_save_path(测试后的video的保存路径)
+--image_save_path(测试后的image的保存路径)
+--gpu(测试时使用的gpu)
+```
+## requirements
+. Tensorflow <br>
+. Opencv2 <br>
