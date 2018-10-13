@@ -22,8 +22,8 @@ python test.py
 --model_file(The name of the model under the `YOLO/model/`, the default is `None`, required.)
 --video_path(The path of the video used for testing, the default is `None`, optional)
 --image_path(The path of the image used for testing, the default is ./data/original/car.jpg, optional)
---video_save_path(The path use for save video, the default is `None`, optinal)
---image_save_path(The path use for save image, the default is `None`, optinal)
+--video_save_path(The path use \for save video, the default is `None`, optinal)
+--image_save_path(The path use \for save image, the default is `None`, optinal)
 --gpu(Gpu used during testing，the default is `None`，optinal)
 ```
 ## requirements
