@@ -5,26 +5,26 @@ YOLO_v2
 ``` bash
 git clone https://github.com/Stinky-Tofu/YOLO_v2.git
 ```
-2. 下载数据 <br>
-在YOLO所在目录新建一个data文件夹，然后在data文件夹下新建一个Pascal_voc文件夹<br>
-下载[Pascal VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)和[Pascal VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar)数据集，然后将这两个数据集放在Pascal_voc文件夹下，并将VOC2012命名为VOCdevkit，将VOC2007命名为VOCdevkit-test <br>
-3. 下载预训练模型<br>
-下载在coco数据集上训练过的模型[yolo_coco_initial.ckpt](https://drive.google.com/drive/folders/19m9KpAmBP1GTGvC2x5XCSvsDW-psEXF5?hl=zh-CN)（这个模型首先在coco数据集上预训练过，然后修改最后一个卷积层，使之适用于Pascal_VOC数据集），然后将这个模型放在YOLO/model/文件夹下。
-4. 训练<br>
+2. Download dataset <br>
+Create a new folder named data in the directory where the YOLO folder is located, and then create a new folder named Pascal_voc in the data folder.<br>
+Download [Pascal VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar) and [Pascal VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar) dataset，and then put the two data sets in the Pascal Voc folder, name VOC2012 as VOCdevkit, and name VOC2007 as VOCdevkit-test <br>
+3. Download pre-trained model<br>
+Download the model trained on coco datasets[yolo_coco_initial.ckpt](https://drive.google.com/drive/folders/19m9KpAmBP1GTGvC2x5XCSvsDW-psEXF5?hl=zh-CN)(This model pre-trained on the coco dataset and then modifies the last convolutional layer to apply to the Pascal_VOC dataset.), then put this model in the YOLO/model/.
+4. Train<br>
 ``` bash
 python train.py
---model_file(model文件夹下模型的名字，默认为yolo_coco_initial.ckpt)
---gpu(训练时使用的gpu，默认为0,1)
+--model_file(The name of the model under the model folder, the default is yolo_coco_initial.ckpt)
+--gpu(Gpu used during training, the default is 0,1)
 ```
-5. 测试<br>
+5. Test<br>
 ``` bash
 python test.py
---model_file(model文件夹下模型的名字，默认为None)
---video_path(用于测试的video的路径，默认为None)
---image_path(用于测试的image的路径，默认为None)
---video_save_path(测试后的video的保存路径, 默认为./data/original/car.jpg)
---image_save_path(测试后的image的保存路径，默认为None)
---gpu(测试时使用的gpu，默认为None)
+--model_file(The name of the model under the model folder, the default is None, required.)
+--video_path(Path to the video used for testing, the default is None, optional)
+--image_path(Path to the image used for testing, the default is ./data/original/car.jpg, optional)
+--video_save_path(Video save path, the default is None, optinal)
+--image_save_path(Image save path, the default is None, optinal)
+--gpu(Gpu used during testing，the default is None，optinal)
 ```
 ## requirements
 . Tensorflow <br>
