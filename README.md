@@ -13,18 +13,18 @@ git clone https://github.com/Stinky-Tofu/YOLO_v2.git
 4. 训练<br>
 ``` bash
 python train.py
---model_file(model文件夹下模型的名字)
---gpu(训练时使用的gpu)
+--model_file(model文件夹下模型的名字，默认为yolo_coco_initial.ckpt)
+--gpu(训练时使用的gpu，默认为0,1)
 ```
 5. 测试<br>
 ``` bash
 python test.py
---model_file(model文件夹下模型的名字)
---video_path(用于测试的video的路径)
---image_path(用于测试的image的路径)
---video_save_path(测试后的video的保存路径)
---image_save_path(测试后的image的保存路径)
---gpu(测试时使用的gpu)
+--model_file(model文件夹下模型的名字，默认为None)
+--video_path(用于测试的video的路径，默认为None)
+--image_path(用于测试的image的路径，默认为None)
+--video_save_path(测试后的video的保存路径, 默认为./data/original/car.jpg)
+--image_save_path(测试后的image的保存路径，默认为None)
+--gpu(测试时使用的gpu，默认为None)
 ```
 ## requirements
 . Tensorflow <br>
