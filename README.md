@@ -1,9 +1,5 @@
 YOLO_v2
 =
-![airplane](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(1).jpg) <br>
-![person and bicycle](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(2).jpg) <br>
-![person and motor](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(3).jpg) <br>
-![dog](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(4).jpg) <br>
 ## Usage
 1. clone YOLO_v2 repository
 ``` bash
@@ -30,6 +26,10 @@ python test.py
 --image_save_path(The path use for save image, the default is `./data/image_detected.jpg`)
 --gpu(Gpu used during testing，the default is `0,1`)
 ```
+![airplane](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(1).jpg) <br>
+![person and bicycle](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(2).jpg) <br>
+![person and motor](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(3).jpg) <br>
+![dog](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/data/image_detected%20(4).jpg) <br>
 ## requirements
 . Tensorflow <br>
 . Opencv2 <br>
