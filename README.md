@@ -35,3 +35,4 @@ python test.py
 ## requirements
 . Tensorflow <br>
 . Opencv2 <br>
+. Python2 <br>
