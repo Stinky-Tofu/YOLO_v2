@@ -1,7 +1,7 @@
 YOLO_v2
 =
 YOLO_v2 implemented with tensorflow <br>
-reference: [YOLO9000: Better, Faster, Stronger](https://arxiv.org/pdf/1612.08242.pdf) <br>
+reference: [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) <br>
 ## Usage
 1. clone YOLO_v2 repository
 ``` bash
