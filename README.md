@@ -20,6 +20,7 @@ python train.py
 --model_file(The name of the model under `YOLO/model/`, the default is `yolo_coco_initial.ckpt`)
 --gpu(Gpu used during training, the default is `0,1`)
 ```
+![Loss graph](https://github.com/Stinky-Tofu/YOLO_v2/blob/master/YOLO/log/loss.png)
 5. Test<br>
 Download the model had trained on Pascal_voc and coco datasets [yolo.ckpt](https://drive.google.com/drive/folders/1ND72f1LTtBYzOTHMtqVGuHovauzm0bfs?hl=zh-CN), then put this model into `YOLO/model/` <br>
 ``` bash
